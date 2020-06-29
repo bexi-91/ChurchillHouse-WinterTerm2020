@@ -1,42 +1,117 @@
-body {
-    background-color: #99cc00;
-    color: #ffffff;
+/* fonts */
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;1,300&family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap" > body {
 
-
+    /*position: fixed;
+    size: 100%;
+    font-family: "playfair";
+    font-size: 16px;*/
 }
 
 header {
-    background-color: firebrick;
-    height: 200px;
-    width: 800px;
-    margin-left: 200px;
-    padding: 50px;
+    background-color: aqua;
+    height: 150px;
+    /*position: fixed;*/
+}
+
+.wrapper {
+    width: 85%;
+    margin-left: 7.5%;
+}
+
+.backimage {
+    position: fixed;
+    background-repeat: no-repeat;
+    max-width: 1500px;
 
 }
+
+/* navigation */
+
+nav {}
+
+nav ul li {
+    display: inline;
+    margin: 10px
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    background-color: cornsilk;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    float: right;
+}
+
+nav ul li a:hover {
+    background-color: aqua;
+}
+
 
 h1 {
-    background-color: orange;
-    padding 3px;
-    text-align: center
+    font-family: sans-serif;
+    color: #222F35;
+    font-size: 24pt;
+    font-weight: 500;
+    text-align: left;
+    padding: 30px;
+    text-decoration: none;
+
 }
 
-nav {
-    background-color: aqua;
-    border: 5px dashed white;
-    padding: 10px;
+h2 {
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    font color: #3C4F4F;
+    text-align: center;
+    padding: 15px;
+    background-color: blueviolet;
+    display: block;
+    margin: auto;
     width: 40%;
-    float: right;
-
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 main {
-    background-color: darkcyan;
-    width: 80%;
-    margin-left: 150px;
-    padding: 15px;
+    overflow: auto;
+}
+
+.mainbackground {
+    background-color: cornflowerblue;
+    margin: 50px;
+    overflow: auto;
 
 }
 
+p {
+    padding: 20px;
+
+}
+
+ul li {
+    padding-left: 20px;
+}
+
 footer {
-    background-color: darkblue;
+    background-color: darkturquoise;
+
+}
+
+/*images*/
+
+.image-left {
+    width: 35%;
+    float: left;
+    margin: 10px;
+
+}
+
+.image-right {
+    width: 35%;
+    margin: 10px;
+    float: right;
+
 }
