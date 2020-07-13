@@ -1,16 +1,11 @@
 /* fonts */
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;1,300&family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap" > body {
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans+Condensed:ital,wght@0,300;1,300&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap');
 
-    /*position: fixed;
-    size: 100%;
-    font-family: "playfair";
-    font-size: 16px;*/
-}
+body {}
 
 header {
-    background-color: aqua;
-    height: 150px;
-    /*position: fixed;*/
+    background-color: #3C4F4F;
+    height: 7.3em;
 }
 
 .wrapper {
@@ -19,85 +14,131 @@ header {
 }
 
 .backimage {
-    position: fixed;
     background-repeat: no-repeat;
-    max-width: 1500px;
 
 }
 
 /* navigation */
 
-nav {}
-
 nav ul li {
     display: inline;
-    margin: 10px
+    margin: .625em;
 }
 
 nav ul li a {
-    color: #000000;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #222F35;
     text-decoration: none;
-    background-color: cornsilk;
-    padding: 10px 15px;
+    background-color: #FFFDFF;
+    padding: .625em .93em;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: .06em;
     float: right;
 }
 
 nav ul li a:hover {
-    background-color: aqua;
+    background-color: #3C4F4F;
+    color: #F7CE00;
 }
 
-
 h1 {
-    font-family: sans-serif;
-    color: #222F35;
-    font-size: 24pt;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-decoration: none;
+    color: #FFFDFF;
+    font-size: 2.3em;
     font-weight: 500;
     text-align: left;
-    padding: 30px;
-    text-decoration: none;
+    padding: 1em 1em 0 1em;
+}
 
+h1 a:link {
+    text-decoration: none;
+}
+
+h1 a:visited {
+    color: #FFFDFF;
+}
+
+h1 a:hover {
+    color: #F7CE00;
 }
 
 h2 {
-    font-family: sans-serif;
-    font-size: 30px;
-    font-weight: 300;
-    font color: #3C4F4F;
+    font-family: 'Merriweather', serif;
+    font-size: 1.5em;
+    font-weight: 100;
+    color: #222F35;
     text-align: center;
-    padding: 15px;
-    background-color: blueviolet;
+    padding: .93em;
+    background-color: #FFFDFF;
     display: block;
     margin: auto;
     width: 40%;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 1.5em;
+    margin-bottom: 3.75em;
+}
+
+h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    color: #222F35;
+    font-size: 1.2em;
+    line-height: 1.25em;
+    padding: 1em 1.25em 0 1.25em;
+}
+
+h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    color: #222F35;
+    font-size: 1.2em;
+    line-height: 1.25em;
+    padding: 1em 1.25em 0 1.25em;
 }
 
 main {
-    overflow: auto;
+    overflow: visible;
+    padding-top: 3.75em;
 }
 
 .mainbackground {
-    background-color: cornflowerblue;
-    margin: 50px;
+    background-color: #FFFDFF;
+    margin: 0 3.125em;
     overflow: auto;
-
+    padding-bottom: 2em;
 }
 
 p {
-    padding: 20px;
-
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.125em;
+    line-height: 1.25em;
+    padding: 1em 1.25em 0 1.25em;
+    color: #222F35;
 }
 
 ul li {
-    padding-left: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.125em;
+    line-height: 1.25em;
+    padding: .25em 1.25em 0 2.5em;
+    color: #222F35;
+}
+
+ul {
+    list-style-type: square;
+    color: #222F35;
+    list-style-position: inside;
 }
 
 footer {
-    background-color: darkturquoise;
-
+    background-color: #3C4F4F;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: italic;
+    text-align: right;
+    padding: 1.5em;
+    color: #F7CE00;
+    font-size: 1em;
+    padding-left: 1.5em;
 }
 
 /*images*/
@@ -105,13 +146,99 @@ footer {
 .image-left {
     width: 35%;
     float: left;
-    margin: 10px;
+    margin: 1.25em;
+}
 
+.image-left img {
+    width: 100%;
 }
 
 .image-right {
     width: 35%;
-    margin: 10px;
+    margin: 1.25em;
     float: right;
+}
 
+.image-right img {
+    width: 100%;
+}
+
+.menu {
+    fill: #FFFFFF;
+    stroke: #FFFDFF;
+    stroke-linecap: square;
+    stroke-miterlimit: 10;
+}
+
+.menu a:hover {
+    color: #F7CE00;
+}
+
+.history .backimage {
+    background-image: url(../images/churchill-house-42.jpg)
+}
+
+/*media q */
+
+@media screen and (max-width: 375px) {
+    body {
+        background: red;
+    }
+
+    .wrapper {
+        width: 100%;
+        margin: 0;
+    }
+
+    .backimage {
+        max-width: 100%;
+    }
+
+    .mainbackground {
+        margin: 0;
+    }
+
+    .image-left {
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+
+    .image-right {
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+
+    nav {
+        float: none;
+
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    body {
+        background: red;
+    }
+
+    .wrapper {
+        width: 100%;
+        margin: 0;
+    }
+
+    .backimage {
+        max-width: 100%;
+
+    }
+
+    .mainbackground {
+        margin: 1em;
+        background-position: center;
+        background-size: 100%;
+    }
+
+    nav {
+        float: none;
+
+    }
 }
